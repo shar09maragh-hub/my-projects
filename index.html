@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--light);
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--dark);
+        }
+        .card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .tag {
+            font-size: 0.7rem;
+            background: #dbeafe;
+            color: var(--primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mere Behtareen Projects 🚀</h1>
+    <p>Ek jagah jahan mere saare AI apps aur websites hain.</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <span class="tag">AI Chatbot</span>
+        <h3>AgentX</h3>
+        <p>Ek intelligent chatbot jo users ki queries ko solve karne mein madad karta hai.</p>
+        <a href="https://app.agentx.so/shared-chat/?agent=696f86fbce8752ca9848c9fa" target="_agentx" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+        <span class="tag">Web App</span>
+        <h3>Naya Project Name</h3>
+        <p>Is project ke baare mein thodi jankari yahan likhein.</p>
+        <a href="#" class="btn">Coming Soon</a>
+    </div>
+</div>
+
+</body>
+</html>
